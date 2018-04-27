@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{c0d038f6-c08e-489e-bce1-5ff9608e9499}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>demo_image.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|VisualStudio|tensorfull</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="caffe_to_keras.py" />
+    <Compile Include="config_reader.py" />
+    <Compile Include="demo_camera.py" />
+    <Compile Include="demo_image.py" />
+    <Compile Include="demo_image_.py" />
+    <Compile Include="demo_image_bk.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dump_caffe_layers.py" />
+    <Compile Include="model.py" />
+    <Compile Include="training\ds_generator_client.py" />
+    <Compile Include="training\ds_iterator.py" />
+    <Compile Include="training\generate_hdf5.py" />
+    <Compile Include="training\generate_masks.py" />
+    <Compile Include="training\optimizers.py" />
+    <Compile Include="training\train_pose.py" />
+    <Compile Include="util.py" />
+    <Compile Include="utils.py" />
+    <Compile Include="utils_video_image.py" />
+    <Compile Include="video.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="readme\dance.gif" />
+    <Content Include="readme\result.png" />
+    <Content Include="readme\tr_results.png" />
+    <Content Include="sample_images\ski.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="readme" />
+    <Folder Include="sample_images" />
+    <Folder Include="training" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|VisualStudio|tensorfull" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

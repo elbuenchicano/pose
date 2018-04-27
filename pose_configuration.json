@@ -1,0 +1,33 @@
+{
+    "source_type"	: "video_folder",
+    
+    "image_file": {
+        "file"	: "y:/personas.jpg",
+		"out"	: "y:/personas_out.png"
+    },
+	
+    "video_file": {
+        "file"		: "/rensso/qnap/Anomalies/umn/crowd.avi",
+        "ini" 		: 0,
+        "fin" 		: 10000000000,
+		"out_folder": "/rensso/qnap/Anomalies/umn",
+		"visual"	: 0,
+		"supported"	: 1,
+		"step"		: 1,
+		"prop"		: 1,
+		"buf_size"	: 1
+    },
+
+	"video_folder": {
+		"path"		: "/rensso/qnap/Anomalies/umn/seq2",
+		"token"		: ".avi",
+		"out_folder": "/rensso/qnap/Anomalies/umn/seq2",
+		"visual"	: 0,
+		"ini"		: 0,
+		"fin"		: 10000000,
+		"step"		: 1,
+		"prop"		: 1,
+		"supported"	: 0,
+		"buf_size"	: 10
+	}
+}

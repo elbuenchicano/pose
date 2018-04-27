@@ -1,0 +1,33 @@
+{
+    "source_type"	: "video_file",
+    
+    "image_file": {
+        "file"	: "y:/personas.jpg",
+		"out"	: "y:/personas_out.png"
+    },
+	
+    "video_file": {
+        "file"		: "/rensso/qnap/Anomalies/train/input.avi",
+        "ini" 		: 0,
+        "fin" 		: 10000000000,
+		"out_folder": "/rensso/qnap/Anomalies/train",
+		"visual"	: 0,
+		"supported"	: 1,
+		"step"		: 1,
+		"prop"		: 1,
+		"buf_size"	: 1
+    },
+
+	"video_folder": {
+		"path"		: "/datasets/DATASETS/subway",
+		"token"		: ".AVI",
+		"out_folder": "/rensso/qnap/Anomalies/subway",
+		"visual"	: 0,
+		"ini"		: 0,
+		"fin"		: 10000000,
+		"step"		: 3,
+		"prop"		: 1,
+		"supported"	: 1,
+		"buf_size"	: 10
+	}
+}
